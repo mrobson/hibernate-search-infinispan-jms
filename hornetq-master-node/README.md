@@ -1,4 +1,5 @@
 ﻿HornetQ Configuration
+=====================
 
 Configuration explanation
 -------------------------
