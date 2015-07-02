@@ -2,30 +2,30 @@
 <persistence version="2.0"
     xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
-    <persistence-unit name="search-pu" transaction-type="JTA">
-        <provider>org.hibernate.ejb.HibernatePersistence</provider>
-        <jta-data-source>java:/test/datasource</jta-data-source>
-        <class>com.mrobson.example.search.datamodel.Person</class>
-        <properties>
-            <property name="hibernate.dialect" value="org.hibernate.dialect.Oracle10gDialect" />
-            <property name="hibernate.show_sql" value="false" />
-            <property name="hibernate.connection.pool_size" value="25" />
-            <property name="hibernate.search.default.worker.thread_pool.size" value="25"/>
-            <property name="hibernate.search.worker.thread_pool.size" value="25"/>
-            <property name="hibernate.search.lucene_version" value="LUCENE_36" />
-            <property name="hibernate.search.default.exclusive_index_use" value="true" />
+	<persistence-unit name="search-pu" transaction-type="JTA">
+		<provider>org.hibernate.ejb.HibernatePersistence</provider>
+		<jta-data-source>java:/test/datasource</jta-data-source>
+		<class>com.mrobson.example.search.datamodel.Person</class>
+		<properties>
+			<property name="hibernate.dialect" value="org.hibernate.dialect.Oracle10gDialect" />
+			<property name="hibernate.show_sql" value="false" />
+			<property name="hibernate.connection.pool_size" value="25" />
+			<property name="hibernate.search.default.worker.thread_pool.size" value="25"/>
+			<property name="hibernate.search.worker.thread_pool.size" value="25"/>
+			<property name="hibernate.search.lucene_version" value="LUCENE_36" />
+			<property name="hibernate.search.default.exclusive_index_use" value="true" />
 
-            <!-- JMS Master -->
-            <property name="hibernate.search.default.directory_provider" value="infinispan"/>
-            <property name="hibernate.search.default.locking_strategy" value="none"/>            
-      		<property name="hibernate.search.default.chunk_size" value="128000"/>
-      		<property name="hibernate.search.default.indexwriter.merge_factor" value="40"/>
-      		<property name="hibernate.search.default.indexwriter.merge_max_size" value="1024"/>
-      		<property name="hibernate.search.default.indexwriter.ram_buffer_size" value="256"/>
-            <property name="hibernate.search.infinispan.configuration_resourcename" value="default-hibernatesearch-infinispan.xml"/>
-            <property name="hibernate.search.default.worker.execution" value="sync"/>
-            <property name="hibernate.search.default.index_flush_interval" value="1000"/>
-            <property name="hibernate.search.default.worker.thread_pool.size" value="5"/>           
-        </properties>
+			<!-- JMS Master -->
+			<property name="hibernate.search.default.directory_provider" value="infinispan"/>
+			<property name="hibernate.search.default.locking_strategy" value="none"/>            
+			<property name="hibernate.search.default.chunk_size" value="128000"/>
+			<property name="hibernate.search.default.indexwriter.merge_factor" value="40"/>
+			<property name="hibernate.search.default.indexwriter.merge_max_size" value="1024"/>
+			<property name="hibernate.search.default.indexwriter.ram_buffer_size" value="256"/>
+			<property name="hibernate.search.infinispan.configuration_resourcename" value="default-hibernatesearch-infinispan.xml"/>
+			<property name="hibernate.search.default.worker.execution" value="sync"/>
+			<property name="hibernate.search.default.index_flush_interval" value="1000"/>
+			<property name="hibernate.search.default.worker.thread_pool.size" value="5"/>           
+		</properties>
 	</persistence-unit>
 </persistence>

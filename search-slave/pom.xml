@@ -46,6 +46,19 @@
                     <failOnMissingWebXml>false</failOnMissingWebXml>
                 </configuration>
             </plugin>
+            <plugin>
+                <groupId>org.jboss.as.plugins</groupId>
+                <artifactId>jboss-as-maven-plugin</artifactId>
+                <version>7.7.Final</version>
+                <configuration>
+                        <hostname>${hostname}</hostname>
+                        <port>${port}</port>
+                </configuration>
+            </plugin>
         </plugins>
     </build>
 </project>
+
+
+
+
