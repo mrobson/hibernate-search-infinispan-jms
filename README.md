@@ -26,7 +26,7 @@ Before building and running this example you need:
 
 Setting the Base
 ----------------
-You can easily enough run this example off 1 server if you're looking to test the waters.  For simplicity, we're going to use 3 unique local installations, but you could use Docker, VMs or Vagrant for additional isolation if you like.
+You can easily run this example off 1 server if you're looking to test the waters.  For simplicity, we're going to use 3 unique local installations, but you could use Docker, VMs or Vagrant for additional isolation if you like.
 
 Locally, my 3 servers are:
 
