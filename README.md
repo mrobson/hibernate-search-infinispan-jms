@@ -189,6 +189,8 @@ When we deploy the master node, we see it create the 'SearchMasterMDB' using the
 	11:03:01,336 INFO  [org.jboss.web] (ServerService Thread Pool -- 73) JBAS018210: Register web context: /masternode
 	11:03:01,590 INFO  [org.jboss.as.server] (management-handler-thread - 1) JBAS015859: Deployed "search-master-1.0-SNAPSHOT.war" (runtime-name : "search-master-1.0-SNAPSHOT.war")
 
+Next, deploy the search-slave WAR to the 2 slave nodes.
+
 	cd ../search-slave
 	mvn jboss-as:deploy -Dhost=127.0.0.1 -Dport=10009
 	mvn jboss-as:deploy -Dhost=127.0.0.1 -Dport=10019
