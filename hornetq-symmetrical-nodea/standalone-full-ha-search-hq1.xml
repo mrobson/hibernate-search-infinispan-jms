@@ -510,7 +510,7 @@
                 </jms-destinations>
             </hornetq-server>
 
-            <hornetq-server name="search-mdb">
+            <hornetq-server name="search-client">
                 <persistence-enabled>false</persistence-enabled>
                 <security-enabled>false</security-enabled>
                 <journal-file-size>102400</journal-file-size>
