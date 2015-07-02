@@ -33,7 +33,8 @@ import org.jboss.ejb3.annotation.ResourceAdapter;
  */
 @MessageDriven(activationConfig = {
 		@ActivationConfigProperty(propertyName = "destinationType", propertyValue = "javax.jms.Queue"),
-		@ActivationConfigProperty(propertyName = "destination", propertyValue = "/queue/indexupdates"),
+		@ActivationConfigProperty(propertyName = "destination", propertyValue = "IndexingQueue"),
+		//@ActivationConfigProperty(propertyName = "destination", propertyValue = "/queue/indexupdates"),
 		@ActivationConfigProperty(propertyName = "maxSession", propertyValue = "24"),
 		@ActivationConfigProperty(propertyName = "acknowledgeMode", propertyValue = "Auto-acknowledge"),
 		@ActivationConfigProperty(propertyName = "reconnectAttempts", propertyValue = "-1"),

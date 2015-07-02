@@ -386,11 +386,6 @@
                         </entries>
                     </pooled-connection-factory>
                 </jms-connection-factories>
-                <jms-destinations>
-                    <jms-queue name="IndexingQueue">
-                        <entry name="/queue/indexupdates"/>
-                    </jms-queue>
-                </jms-destinations>
             </hornetq-server>
         </subsystem>
         <subsystem xmlns="urn:jboss:domain:modcluster:1.2">
